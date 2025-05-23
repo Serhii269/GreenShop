@@ -29,7 +29,6 @@
   line-height: 123%;
   color: #3d3d3d;
   margin-bottom: 14px;
-  text-align: center;
 }
 .input {
   width: 300px;
@@ -52,6 +51,14 @@
   color: #fff;
   border: none;
   box-sizing: border-box;
+}
+.form-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3d3d3d;
+  margin-bottom: 36px;
 }
 .social-button {
   width: 100%;
