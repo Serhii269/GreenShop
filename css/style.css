@@ -1,9 +1,53 @@
+@font-face {
+  font-family: "cera_probold";
+  src: url("../fonts/cera_pro_bold-webfont.eot");
+  src: url("../fonts/cera_pro_bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/cera_pro_bold-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_bold-webfont.woff") format("woff"),
+    url("../fonts/cera_pro_bold-webfont.ttf") format("truetype"),
+    url("../fonts/cera_pro_bold-webfont.svg#cera_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cera_promedium";
+  src: url("../fonts/cera_pro_medium-webfont.eot");
+  src: url("../fonts/cera_pro_medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/cera_pro_medium-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_medium-webfont.woff") format("woff"),
+    url("../fonts/cera_pro_medium-webfont.ttf") format("truetype"),
+    url("../fonts/cera_pro_medium-webfont.svg#cera_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cera_proregular";
+  src: url("../fonts/cera_pro_regular-webfont.eot");
+  src: url("../fonts/cera_pro_regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/cera_pro_regular-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_regular-webfont.woff") format("woff"),
+    url("../fonts/cera_pro_regular-webfont.ttf") format("truetype"),
+    url("../fonts/cera_pro_regular-webfont.svg#cera_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-main {
   max-width: 500px;
   border: solid 1px silver;
   margin: auto;
@@ -83,16 +127,11 @@
 }
 
 /* index.html */
-
-.container-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 header {
   padding-top: 30px;
   margin-bottom: 12px;
 }
-header .container-main {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,6 +153,7 @@ header nav ul {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+  font-family: "cera_proregular";
 }
 
 .text {
@@ -125,7 +165,7 @@ header nav ul {
 ul {
   list-style: none;
 }
-.banner .container-main {
+.banner .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,6 +173,7 @@ ul {
 .text-color {
   color: #46a358;
   text-transform: uppercase;
+  font-family: "cera_probold";
 }
 .shop {
   border-radius: 6px;
@@ -147,6 +188,7 @@ ul {
   align-items: center;
   text-decoration: none;
   padding: 10px 15px;
+  font-family: "cera_probold";
 }
 a {
   text-decoration: none;
@@ -155,8 +197,8 @@ a {
   text-transform: uppercase;
   font-size: 65px;
   line-height: 70px;
-  font-family: sans-serif;
   margin-bottom: 5px;
+  font-family: "cera_probold";
 }
 
 /*
@@ -179,7 +221,7 @@ a {
 .banner div div div {
   width: 50%;
 }
-.container-main-title {
+.container-title {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 7px;
@@ -196,10 +238,14 @@ a {
 .custom-hover {
   padding-bottom: 19px;
   color: #3d3d3d;
+  font-family: "cera_proregular";
 }
 
 .custom-hover:hover {
   border-bottom: 2px solid #46a358;
   transition: all linear 0.2;
   font-weight: 600;
+}
+p.container {
+  font-family: "cera_proregular";
 }
