@@ -348,4 +348,18 @@ p.container {
   color: #46a358;
 }
 .right-side-end {
+  display: flex;
+  gap: 10px;
+  max-width: 258px;
+}
+.right-side-end a {
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  background: #46a358;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "cera_probold";
 }
