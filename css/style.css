@@ -433,13 +433,11 @@ p.container {
   background-color: #f5f5f5;
   max-width: 586px;
   display: flex;
-  align-items: center;
 }
 .right-promo {
   background-color: #f5f5f5;
   max-width: 586px;
   display: flex;
-  align-items: center;
 }
 .find-more {
   display: inline-flex;
@@ -456,18 +454,32 @@ p.container {
   color: #fff;
   text-decoration: none;
   font-family: "cera_proregular";
+  margin-bottom: 46px;
+  margin-left: 129px;
 }
 .container-promo h3 {
   font-family: "cera_probold";
   color: #3d3d3d;
   margin-top: 37px;
   margin-bottom: 9px;
+  margin-left: 100px;
+  margin-right: 35px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: right;
 }
 .container-promo p {
   color: #727272;
   font-family: "cera_proregular";
   margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: right;
+  margin-right: 30px;
 }
-.container-promo a {
-  margin-bottom: 46px;
+.promo-text {
+}
+.find-more img {
 }
