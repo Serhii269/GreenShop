@@ -54,6 +54,19 @@
   padding: 52px 100px 50px;
   box-sizing: border-box;
   border-bottom: solid 10px #46a358;
+  position: relative;
+}
+.container-main .close-bottom {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/close-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 .form-title {
   text-align: center;
@@ -62,6 +75,7 @@
   line-height: 80%;
   color: #3d3d3d;
   margin-bottom: 40px;
+  font-family: "cera_promedium";
 }
 .register {
   color: #46a358;
@@ -73,6 +87,7 @@
   line-height: 123%;
   color: #3d3d3d;
   margin-bottom: 14px;
+  font-family: "cera_proregular";
 }
 .input {
   width: 300px;
@@ -81,6 +96,11 @@
   border-radius: 5px;
   padding: 12px 14px;
   margin-bottom: 16px;
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #a5a5a5;
 }
 .register-button {
   background-color: #46a358;
@@ -95,6 +115,7 @@
   color: #fff;
   border: none;
   box-sizing: border-box;
+  font-family: "cera_probold";
 }
 .form-text {
   text-align: center;
@@ -103,6 +124,25 @@
   line-height: 123%;
   color: #3d3d3d;
   margin-bottom: 36px;
+  position: relative;
+  font-family: "cera_proregular";
+}
+.form-text::before,
+.form-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 32%;
+  height: 1px;
+  background: #eaeaea;
+}
+
+.form-text::before {
+  left: 0;
+}
+
+.form-text::after {
+  right: 0;
 }
 .social-button {
   width: 100%;
@@ -120,6 +160,7 @@
   padding: 10px 0;
   text-decoration: none;
   margin-bottom: 16px;
+  font-family: "cera_promedium";
 }
 .container-header {
   border-bottom: 0.5px solid gray;
