@@ -235,6 +235,20 @@ header nav ul li ul.submenu li:last-child a::after {
   left: 150px;
   top: 7px;
 }
+header nav ul li ul.submenu li:last-child a:hover::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-left: 8px;
+  background-image: url(../images/header-arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 150px;
+  top: 7px;
+}
+
 header nav ul li.dropdown .submenu li:last-of-type:hover .submenu-2 {
 }
 
@@ -252,6 +266,14 @@ header nav ul li.dropdown .submenu li:last-of-type:hover .submenu-2 {
   color: #fff;
   text-decoration: none;
   font-family: "cera_proregular";
+}
+header a.login1::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/login.svg");
+  background-repeat: no-repeat;
 }
 
 .text {
@@ -305,15 +327,6 @@ a {
   font-family: "cera_probold";
 }
 
-/*
-.container-main-img {
-  background-image: url("../images/plants.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-*/
 .container-banner {
   background-color: #f5f5f5;
   padding: 0px 43px !important;
@@ -577,13 +590,15 @@ p.container {
   bottom: 65px;
 }
 /*/
-.plant ul li a:first-of-type:hover {
+.plant ul li a:first-of-type::before {
   display: block;
   content: "";
+  width: 20px;
+  height: 20px;
   background-image: url(../images/shopping.svg);
   background-repeat: no-repeat;
 }
-/*/
+  /*/
 
 .section-shop {
   margin-bottom: 146px;
@@ -625,6 +640,12 @@ p.container {
   text-decoration: none;
   font-family: "cera_proregular";
   margin-left: 416px;
+}
+.promo-text a::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/arrow-right-white.svg");
 }
 .container-promo h3 {
   font-family: "cera_probold";
@@ -680,7 +701,6 @@ p.container {
 .blog_posts {
   display: flex;
   justify-content: space-between;
-  gap: 43px;
 }
 .blog_post {
   background-color: #f5f5f5;
@@ -692,7 +712,7 @@ p.container {
   padding-bottom: 12px;
   padding-top: 8px;
 }
-.blog_info a span {
+.blog_info span {
   font-weight: 500;
   font-size: 14px;
   line-height: 114%;
@@ -719,7 +739,6 @@ p.container {
 .blog_info a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 3px;
   font-weight: 500;
   font-size: 14px;
@@ -731,14 +750,21 @@ p.container {
   color: #46a358;
 }
 
-.blog_info .arrow {
+.blog_info a:after {
+  content: "";
+  display: inline-block;
   width: 16px;
-  height: 16px;
+  height: 9px;
   display: inline-block;
   background-image: url("../images/arrow-right-blog.svg");
   background-repeat: no-repeat;
 }
 
-.blog_info a:hover .arrow {
+.blog_info a:hover::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 10px;
   background-image: url("../images/arrow-right-blog-green.svg");
+  background-repeat: no-repeat;
 }
