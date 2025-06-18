@@ -267,6 +267,20 @@ header nav ul li.dropdown .submenu li:last-of-type:hover .submenu-2 {
   text-decoration: none;
   font-family: "cera_proregular";
 }
+
+.submenu-2 {
+  display: none;
+}
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-item:hover .submenu-2 {
+  display: block;
+  position: absolute;
+}
+
 header a.login1::before {
   content: "";
   display: inline-block;
@@ -433,6 +447,60 @@ p.container {
   overflow: hidden;
 }
 
+.element-shop::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/shopping.svg);
+  background-repeat: no-repeat;
+}
+
+.element-like::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/like.svg);
+  background-repeat: no-repeat;
+}
+
+.element-search::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+}
+
+.element-shop:hover::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/shopping-green.svg);
+  background-repeat: no-repeat;
+}
+
+.element-like:hover::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/like-green.svg);
+  background-repeat: no-repeat;
+}
+
+.element-search:hover::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/search-green.svg);
+  background-repeat: no-repeat;
+}
+
 .left-box ul {
   margin-bottom: 377px;
 }
@@ -587,18 +655,8 @@ p.container {
   transition: 0.5s;
 }
 .plant:hover ul {
-  bottom: 65px;
+  bottom: 68px;
 }
-/*/
-.plant ul li a:first-of-type::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/shopping.svg);
-  background-repeat: no-repeat;
-}
-  /*/
 
 .section-shop {
   margin-bottom: 146px;
