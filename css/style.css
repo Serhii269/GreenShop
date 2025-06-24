@@ -116,6 +116,10 @@
   border: none;
   box-sizing: border-box;
   font-family: "cera_probold";
+  transition: all 0.3s ease;
+}
+.register-button:hover {
+  transform: scale(1.04);
 }
 .form-text {
   text-align: center;
@@ -161,6 +165,10 @@
   text-decoration: none;
   margin-bottom: 16px;
   font-family: "cera_promedium";
+  transition: all 0.3s ease;
+}
+.social-button:hover {
+  transform: scale(1.04);
 }
 .container-header {
   border-bottom: 0.5px solid gray;
