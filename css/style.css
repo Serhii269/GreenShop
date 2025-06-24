@@ -196,10 +196,12 @@ header nav ul li ul.submenu li {
 }
 header nav ul li ul.submenu li:hover {
   background-color: #1a712a;
+  transition: all 0.3s ease;
 }
 header nav ul li ul.submenu li:hover a {
   color: #f5f5f5;
   font-family: "cera_probold";
+  transition: all 0.3s ease;
 }
 header nav ul li ul.submenu li a {
   font-weight: 400;
@@ -220,11 +222,7 @@ header nav ul li ul.submenu .submenu-2 li a {
 header nav ul li ul.submenu li a:last-of-type {
   position: relative;
 }
-/*/
-header nav ul li ul.submenu li .submenu-2 {
-  background-color: #edf6ee;
-}
-/*/
+
 header nav ul li ul.submenu {
   min-width: 188px;
   position: absolute;
@@ -270,6 +268,10 @@ header nav ul li.dropdown ul.submenu li.dropdown-item:hover > a::after {
   color: #fff;
   text-decoration: none;
   font-family: "cera_proregular";
+  transition: 0.3s ease;
+}
+.login1:hover {
+  transform: scale(1.1);
 }
 
 .submenu-2 {
@@ -322,6 +324,9 @@ ul {
   font-family: "cera_probold";
 }
 .shop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 6px;
   width: 140px;
   height: 40px;
@@ -335,6 +340,10 @@ ul {
   text-decoration: none;
   padding: 10px 15px;
   font-family: "cera_promedium";
+  transition: all 0.3s ease;
+}
+.shop:hover {
+  transform: scale(1.08);
 }
 a {
   text-decoration: none;
@@ -448,6 +457,11 @@ p.container {
   display: inline-block;
   background-color: #f5f5f5;
 }
+
+.plant:hover {
+  border-top: #46a358 1px solid;
+}
+
 .plant {
   max-width: 258px;
   position: relative;
@@ -543,13 +557,14 @@ p.container {
 .green-text:hover {
   color: #46a358;
   font-family: "cera_probold";
+  transform: scale(1.02);
 }
 
 .green-underline {
   color: #3d3d3d;
   font-family: "cera_proregular";
   border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   display: inline-block;
 }
 .green-underline:hover {
@@ -704,6 +719,10 @@ p.container {
   color: #fff;
   text-decoration: none;
   font-family: "cera_proregular";
+  transition: all 0.4s ease;
+}
+.find-more:hover {
+  transform: scale(1.08);
 }
 .promo-text a::after {
   content: "";
@@ -810,6 +829,7 @@ p.container {
   line-height: 114%;
   color: #3d3d3d;
   font-family: "cera_promedium";
+  transition: all 0.3s ease;
 }
 .blog_info a:hover {
   color: #46a358;
@@ -823,6 +843,7 @@ p.container {
   display: inline-block;
   background-image: url("../images/arrow-right-blog.svg");
   background-repeat: no-repeat;
+  transition: all 0.3s ease;
 }
 
 .blog_info a:hover::after {
