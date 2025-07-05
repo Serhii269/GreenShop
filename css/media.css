@@ -110,14 +110,14 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    left: 302px;
     top: 250px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    left: 302px;
     top: 489px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top-input p {
     display: none;
@@ -232,14 +232,14 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    left: 212px;
     top: 250px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    left: 212px;
     top: 489px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top-input p {
     display: none;
@@ -393,14 +393,14 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    left: 128px;
     top: 250px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    left: 128px;
     top: 489px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top-input p {
     display: none;
@@ -557,14 +557,14 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    left: 97px;
     top: 250px;
-    transform: rotate(0deg);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    left: 97px;
+    left: 50%;
     top: 489px;
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
   }
   .footer-top-input p {
     display: none;
@@ -718,14 +718,22 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    left: 73px;
+    /*/left: 73px;
     top: 250px;
-    transform: rotate(0deg);
+    transform: rotate(0deg);/*/
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    left: 73px;
+    /*/left: 73px;
     top: 489px;
     transform: rotate(0deg);
+    position: absolute;/*/
+    top: 489px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .footer-top-input p {
     display: none;

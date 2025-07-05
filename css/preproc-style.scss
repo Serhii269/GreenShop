@@ -189,15 +189,14 @@ header {
   .login1 {
     margin-bottom: 11px;
   }
-}
-
-header nav ul {
-  display: flex;
-  gap: 50px;
-}
-header nav ul li ul {
-  gap: 0;
-  display: block;
+  nav ul {
+    display: flex;
+    gap: 50px;
+    li ul {
+      gap: 0;
+      display: block;
+    }
+  }
 }
 header nav ul li.dropdown {
   position: relative;
@@ -281,9 +280,9 @@ header nav ul li.dropdown ul.submenu li.dropdown-item:hover > a::after {
   text-decoration: none;
   font-family: $mainfont;
   transition: 0.3s ease;
-}
-.login1:hover {
-  transform: scale(1.1);
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .submenu-2 {
@@ -353,10 +352,11 @@ ul {
   padding: 10px 15px;
   font-family: "cera_promedium";
   transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.08);
+  }
 }
-.shop:hover {
-  transform: scale(1.08);
-}
+
 a {
   text-decoration: none;
 }
@@ -470,14 +470,13 @@ p.container {
   background-color: #f5f5f5;
 }
 
-.plant:hover {
-  border-top: $maincolor 1px solid;
-}
-
 .plant {
   max-width: 258px;
   position: relative;
   overflow: hidden;
+  &:hover {
+    border-top: $maincolor 1px solid;
+  }
 }
 
 .element-shop::after {
@@ -534,28 +533,45 @@ p.container {
   background-repeat: no-repeat;
 }
 
-.left-box ul {
-  margin-bottom: 377px;
+.left-box {
+  ul {
+    margin-bottom: 423px;
+  }
 }
 
-.right-side-header ul {
-  display: flex;
-  gap: 37px;
+.right-side-header {
+  ul {
+    display: flex;
+    gap: 37px;
+  }
+  p {
+    font-family: $mainfont;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 }
 
-.right-side-header p {
-  font-family: $mainfont;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.right-side-main span {
-  display: block;
-  font-family: $mainfont;
-  line-height: 100%;
-  color: #3d3d3d;
-  margin-bottom: 6px;
+.right-side-main {
+  span {
+    font-family: $mainfont;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+    &:nth-of-type(2) {
+      font-family: "cera_probold";
+      color: $maincolor;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 89%;
+      margin-bottom: 0;
+      display: inline;
+      margin-right: 16px;
+    }
+  }
 }
 
 .green-text {
@@ -564,12 +580,11 @@ p.container {
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
   display: inline-block;
-}
-
-.green-text:hover {
-  color: $maincolor;
-  font-family: "cera_probold";
-  transform: scale(1.02);
+  &:hover {
+    color: $maincolor;
+    font-family: "cera_probold";
+    transform: scale(1.02);
+  }
 }
 
 .green-underline {
@@ -578,31 +593,11 @@ p.container {
   border-bottom: 2px solid transparent;
   transition: all 0.5s ease;
   display: inline-block;
-}
-.green-underline:hover {
-  color: $maincolor;
-  font-family: "cera_probold";
-  border-bottom: 2px solid $maincolor;
-}
-
-.right-side-main .plant span {
-  font-family: $mainfont;
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #3d3d3d;
-  margin-bottom: 6px;
-}
-.right-side-main .plant span:nth-of-type(2) {
-  font-family: "cera_probold";
-  color: $maincolor;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 89%;
-  margin-bottom: 0;
-  display: inline;
-  margin-right: 16px;
+  &:hover {
+    color: $maincolor;
+    font-family: "cera_probold";
+    border-bottom: 2px solid $maincolor;
+  }
 }
 
 .right-side-main .plant span span {
