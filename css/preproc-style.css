@@ -106,7 +106,6 @@
   font-family: "cera_probold";
   transition: all 0.3s ease;
 }
-
 .register-button:hover {
   transform: scale(1.04);
 }
@@ -121,9 +120,7 @@
   position: relative;
   font-family: "cera_proregular";
 }
-
-.form-text::before,
-.form-text::after {
+.form-text::before, .form-text::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -131,11 +128,9 @@
   height: 1px;
   background: #eaeaea;
 }
-
 .form-text::before {
   left: 0;
 }
-
 .form-text::after {
   right: 0;
 }
@@ -159,8 +154,7 @@
   font-family: "cera_promedium";
   transition: all 0.3s ease;
 }
-
-.social-button:hover {
+.social-button.social-button:hover {
   transform: scale(1.04);
 }
 
@@ -185,55 +179,18 @@ header nav ul {
   display: flex;
   gap: 50px;
 }
-header nav ul li ul {
+header nav li.dropdown {
+  position: relative;
+}
+header nav li.dropdown:hover .submenu {
+  height: 230px;
+  overflow: visible;
+}
+header nav li ul {
   gap: 0;
   display: block;
 }
-
-header nav ul li.dropdown {
-  position: relative;
-}
-
-header nav ul li ul.submenu li {
-  background-color: #edf6ee;
-  padding: 7px 14px;
-}
-
-header nav ul li ul.submenu li:hover {
-  background-color: #1a712a;
-  transition: all 0.3s ease;
-}
-
-header nav ul li ul.submenu li:hover a {
-  color: #f5f5f5;
-  font-family: "cera_probold";
-  transition: all 0.3s ease;
-}
-
-header nav ul li ul.submenu li a {
-  font-weight: 400;
-  font-size: 16px;
-  color: #3d3d3d;
-  font-family: "cera_proregular";
-}
-
-header nav ul li ul.submenu .submenu-2 li:hover a {
-  color: #f5f5f5;
-  font-family: "cera_probold";
-}
-
-header nav ul li ul.submenu .submenu-2 li a {
-  font-weight: 400;
-  font-size: 16px;
-  color: #3d3d3d;
-  font-family: "cera_proregular";
-}
-
-header nav ul li ul.submenu li a:last-of-type {
-  position: relative;
-}
-
-header nav ul li ul.submenu {
+header nav li ul.submenu {
   min-width: 188px;
   position: absolute;
   top: 58px;
@@ -242,10 +199,50 @@ header nav ul li ul.submenu {
   height: 0;
   transition: 0.4s;
 }
-
-header nav ul li.dropdown:hover .submenu {
-  height: 230px;
-  overflow: visible;
+header nav li ul.submenu li {
+  background-color: #edf6ee;
+  padding: 7px 14px;
+}
+header nav li ul.submenu li.dropdown-item {
+  position: relative;
+}
+header nav li ul.submenu li.dropdown-item:hover .submenu-2 {
+  display: block;
+  position: absolute;
+  right: -167px;
+  top: -104px;
+  min-width: 178px;
+}
+header nav li ul.submenu li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: "cera_proregular";
+}
+header nav li ul.submenu li a:last-of-type {
+  position: relative;
+}
+header nav li ul.submenu li:hover {
+  background-color: #1a712a;
+  transition: all 0.3s ease;
+}
+header nav li ul.submenu li:hover a {
+  color: #f5f5f5;
+  font-family: "cera_probold";
+  transition: all 0.3s ease;
+}
+header nav li ul.submenu .submenu-2 {
+  display: none;
+}
+header nav li ul.submenu .submenu-2 li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+  font-family: "cera_proregular";
+}
+header nav li ul.submenu .submenu-2 li:hover a {
+  color: #f5f5f5;
+  font-family: "cera_probold";
 }
 
 header nav ul li.dropdown ul.submenu li.dropdown-item > a::after {
@@ -285,24 +282,7 @@ header nav ul li.dropdown ul.submenu li.dropdown-item:hover > a::after {
 .login1:hover {
   transform: scale(1.1);
 }
-
-.submenu-2 {
-  display: none;
-}
-
-.dropdown-item {
-  position: relative;
-}
-
-.dropdown-item:hover .submenu-2 {
-  display: block;
-  position: absolute;
-  right: -167px;
-  top: -104px;
-  min-width: 178px;
-}
-
-header a.login1::before {
+.login1::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -326,7 +306,6 @@ ul {
 .banner {
   margin-bottom: 26px;
 }
-
 .banner .container {
   display: flex;
   justify-content: space-between;
@@ -400,9 +379,18 @@ a {
   font-size: 14px;
   line-height: 27px;
   margin-bottom: 44px;
+  font-family: "cera_proregular";
 }
 
-.custom-hover:after {
+.custom-hover {
+  padding-bottom: 19px;
+  color: #3d3d3d;
+  font-family: "cera_proregular";
+}
+.custom-hover:hover {
+  font-family: "cera_probold";
+}
+.custom-hover::after {
   content: "";
   display: block;
   width: 0;
@@ -412,19 +400,8 @@ a {
   transition: 0.4s;
   align-items: end;
 }
-
 .custom-hover:hover::after {
   width: 100%;
-}
-
-.custom-hover {
-  padding-bottom: 19px;
-  color: #3d3d3d;
-  font-family: "cera_proregular";
-}
-
-.custom-hover:hover {
-  font-family: "cera_probold";
 }
 
 p.container {
@@ -434,6 +411,25 @@ p.container {
 .left-box {
   max-width: 310px;
   background-color: #f5f5f5;
+}
+.left-box h3 {
+  margin-bottom: 30px;
+  margin-top: 14px;
+  margin-left: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  font-family: "cera_probold";
+}
+.left-box ul {
+  margin-bottom: 423px;
+}
+.left-box ul li {
+  margin-bottom: 28px;
+  margin-left: 25px;
+  color: black;
+  font-family: "cera_proregular";
 }
 
 .container-shop {
@@ -458,28 +454,53 @@ p.container {
   justify-content: space-between;
   margin-bottom: 90px;
 }
-
-.left-box h3 {
-  margin-bottom: 30px;
-  margin-top: 14px;
-  margin-left: 18px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 89%;
-  color: #3d3d3d;
-  font-family: "cera_probold";
-}
-
-.left-box li {
-  margin-bottom: 28px;
-  margin-left: 25px;
-  color: black;
-  font-family: "cera_proregular";
-}
-
 .right-side-main > .plant > a {
   display: inline-block;
   background-color: #f5f5f5;
+}
+.right-side-main > .plant div {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 80px;
+  height: 29px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  background-color: #46a358;
+  font-family: "cera_promedium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-side-main > .plant span {
+  font-family: "cera_proregular";
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3d3d3d;
+  margin-bottom: 6px;
+}
+.right-side-main > .plant span:nth-of-type(2) {
+  font-family: "cera_probold";
+  color: #46a358;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  margin-bottom: 0;
+  display: inline;
+  margin-right: 16px;
+}
+.right-side-main > .plant span span {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 89%;
+  color: #a5a5a5;
+  margin-left: 16px;
+  text-decoration: line-through;
 }
 
 .plant {
@@ -489,6 +510,23 @@ p.container {
 }
 .plant:hover {
   border-top: #46a358 1px solid;
+}
+.plant:hover ul {
+  bottom: 68px;
+}
+.plant a {
+  margin-bottom: 12px;
+  height: 300px;
+}
+.plant ul {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 26px;
+  bottom: -30px;
+  left: 0;
+  transition: 0.5s;
 }
 
 .element-shop::after {
@@ -545,10 +583,6 @@ p.container {
   background-repeat: no-repeat;
 }
 
-.left-box ul {
-  margin-bottom: 423px;
-}
-
 .right-side-header ul {
   display: flex;
   gap: 37px;
@@ -558,26 +592,6 @@ p.container {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-.right-side-main span {
-  font-family: "cera_proregular";
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #3d3d3d;
-  margin-bottom: 6px;
-}
-.right-side-main span:nth-of-type(2) {
-  font-family: "cera_probold";
-  color: #46a358;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 89%;
-  margin-bottom: 0;
-  display: inline;
-  margin-right: 16px;
 }
 
 .green-text {
@@ -606,46 +620,10 @@ p.container {
   border-bottom: 2px solid #46a358;
 }
 
-.right-side-main .plant span span {
-  display: inline-flex;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 89%;
-  color: #a5a5a5;
-  margin-left: 16px;
-  text-decoration: line-through;
-}
-
 .right-side-end {
   display: flex;
   justify-content: flex-end;
 }
-
-.right-side-end a:hover {
-  background: #46a358;
-  font-family: "cera_probold";
-  color: #fff;
-}
-
-.right-side-end ul {
-  display: flex;
-  gap: 10px;
-}
-
-.right-side-end ul li:last-of-type a::after {
-  display: block;
-  content: "";
-  background-image: url(../images/arrow-right.svg);
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.right-side-end ul li:last-of-type a:hover:after {
-  background-image: url(../images/arrow-right_hover.svg);
-}
-
 .right-side-end a {
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -657,47 +635,30 @@ p.container {
   justify-content: center;
   align-items: center;
   font-family: "cera_proregular";
-  border-radius: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 89%;
 }
-
-.plant a {
-  margin-bottom: 12px;
-  height: 300px;
-}
-
-.right-side-main .plant div {
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 80px;
-  height: 29px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
+.right-side-end a:hover {
+  background: #46a358;
+  font-family: "cera_probold";
   color: #fff;
-  background-color: #46a358;
-  font-family: "cera_promedium";
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.plant ul {
-  position: absolute;
+.right-side-end ul {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 26px;
-  bottom: -30px;
-  left: 0;
-  transition: 0.5s;
+  gap: 10px;
 }
-
-.plant:hover ul {
-  bottom: 68px;
+.right-side-end ul li:last-of-type a::after {
+  display: block;
+  content: "";
+  background-image: url(../images/arrow-right.svg);
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.right-side-end ul li:last-of-type a:hover::after {
+  background-image: url(../images/arrow-right_hover.svg);
 }
 
 .section-shop {
@@ -1071,6 +1032,21 @@ p.container {
 .footer-bottom-nav {
   display: inline-flex;
 }
+.footer-bottom-nav h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  font-family: "cera_probold";
+  margin-bottom: 8px;
+}
+.footer-bottom-nav ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #3d3d3d;
+  font-family: "cera_proregular";
+}
 
 .footer-bottom-nav1 {
   margin-right: 164px;
@@ -1085,23 +1061,6 @@ p.container {
   margin-right: 173px;
 }
 
-.footer-bottom-nav h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 89%;
-  color: #3d3d3d;
-  font-family: "cera_probold";
-  margin-bottom: 8px;
-}
-
-.footer-bottom-nav ul li {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 214%;
-  color: #3d3d3d;
-  font-family: "cera_proregular";
-}
-
 .footer-bottom-media h3 {
   font-weight: 700;
   font-size: 18px;
@@ -1110,7 +1069,6 @@ p.container {
   font-family: "cera_probold";
   margin-bottom: 20px;
 }
-
 .footer-bottom-media p {
   font-weight: 700;
   font-size: 18px;
@@ -1123,12 +1081,10 @@ p.container {
 .social-media {
   margin-bottom: 33px;
 }
-
 .social-media ul {
   display: flex;
   gap: 10px;
 }
-
 .social-media ul li a {
   border: 1px solid rgba(70, 163, 88, 0.2);
   border-radius: 4px;
@@ -1138,7 +1094,6 @@ p.container {
   justify-content: center;
   align-items: center;
 }
-
 .social-media ul li a:hover {
   transform: scale(1.2);
 }
@@ -1189,7 +1144,6 @@ p.container {
   letter-spacing: 2px;
   position: relative;
 }
-
 .loader::after {
   content: "GreenShop";
   position: absolute;

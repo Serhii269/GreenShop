@@ -357,7 +357,8 @@
   }
   .plant_img {
     bottom: 220px;
-    left: 82px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .left-promo {
     margin-bottom: 50px;
@@ -520,7 +521,8 @@
   }
   .plant_img {
     bottom: 220px;
-    left: 43px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .left-promo {
     margin-bottom: 50px;
@@ -686,7 +688,8 @@
   }
   .plant_img {
     bottom: 220px;
-    left: 16px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .left-promo {
     margin-bottom: 50px;
