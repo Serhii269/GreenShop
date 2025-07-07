@@ -507,9 +507,12 @@ p.container {
   max-width: 258px;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 .plant:hover {
   border-top: #46a358 1px solid;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .plant:hover ul {
   bottom: 68px;
