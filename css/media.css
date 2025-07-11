@@ -11,9 +11,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .left-box ul {
-    margin-bottom: 1273px;
-  }
+
   .container-promo {
     display: flex;
     justify-content: center;
@@ -27,6 +25,23 @@
     gap: 10px;
     padding-left: 80px;
     padding-right: 80px;
+  }
+  header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .blog_posts {
+    padding: 0px;
+    justify-content: center;
+  }
+  .footer-bottom-nav {
+    display: block;
+  }
+  .footer-top::after {
+    display: none;
+  }
+  .footer-top::before {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -65,13 +80,14 @@
     padding-left: 20px;
   }
   .right-side-main {
-    padding-left: 80px;
-    padding-right: 80px;
-    gap: 50px 33px;
-    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: fit-content;
   }
   .right-side-end {
-    padding-right: 15px;
+    display: flex;
+    justify-content: center;
   }
   .section-shop {
     margin-bottom: 83px;
@@ -153,6 +169,10 @@
   .footer-bottom-nav1 {
     min-width: 137px;
   }
+  header .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 @media screen and (max-width: 600px) {
   .title {
@@ -189,12 +209,7 @@
     padding-right: 20px;
     padding-left: 20px;
   }
-  .right-side-main {
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 50px 33px;
-    margin-bottom: 0px;
-  }
+
   .right-side-end {
     padding-right: 15px;
   }
@@ -275,6 +290,25 @@
   .footer-bottom-nav1 {
     min-width: 137px;
   }
+  header .container {
+    padding: 0px 20px;
+  }
+  header nav ul {
+    display: none;
+  }
+  .right-side-main {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .blog_posts {
+    display: flex;
+    justify-content: center;
+  }
+  .right-side-end {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 440px) {
   header nav {
@@ -323,16 +357,10 @@
     justify-content: center;
   }
   .right-side-end {
-    display: block;
-    justify-items: center;
-  }
-  .right-side-main {
-    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
+
   .section-shop {
     margin-bottom: 80px;
   }
@@ -438,6 +466,17 @@
     flex-direction: column;/*/
     padding: 58px 68px 50px;
   }
+  header .container {
+    padding: 0px 15px;
+  }
+  .blog_post {
+    width: fit-content;
+  }
+  .right-side-main {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -487,15 +526,13 @@
     justify-content: center;
   }
   .right-side-end {
-    display: block;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
   }
   .right-side-main {
-    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 0px;
   }
   .section-shop {
     margin-bottom: 80px;
@@ -597,11 +634,13 @@
     min-width: 137px;
   }
   .container-main {
-    /*/display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;/*/
     padding: 58px 36px 50px;
+  }
+  header .container {
+    padding: 0px 10px;
+  }
+  .blog_post {
+    width: fit-content;
   }
 }
 
@@ -632,8 +671,6 @@
     text-align: center;
   }
   .container-main-box {
-    /*/ display: block;
-    justify-content: center;/*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -654,16 +691,10 @@
     justify-content: center;
   }
   .right-side-end {
-    display: block;
-    justify-items: center;
-  }
-  .right-side-main {
-    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
+
   .section-shop {
     margin-bottom: 80px;
   }
@@ -721,19 +752,12 @@
     margin-bottom: 40px;
   }
   .footer-top::before {
-    /*/left: 73px;
-    top: 250px;
-    transform: rotate(0deg);/*/
     position: absolute;
     top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .footer-top::after {
-    /*/left: 73px;
-    top: 489px;
-    transform: rotate(0deg);
-    position: absolute;/*/
     top: 489px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -768,5 +792,8 @@
   }
   .container-main {
     padding: 58px 11px 50px;
+  }
+  header .container {
+    padding: 0px 10px;
   }
 }
