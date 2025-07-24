@@ -1,14 +1,13 @@
-// Ищем все ссылки внутри header, начинающиеся с #
 document.querySelectorAll('header a[href^="#"]').forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault(); // отменяем стандартное поведение
+    e.preventDefault();
 
-    const targetId = this.getAttribute("href"); // получаем ID (например, #section1)
-    const targetElement = document.querySelector(targetId); // ищем нужный элемент
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: "smooth", // плавная прокрутка
+        behavior: "smooth",
       });
     }
   });
