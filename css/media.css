@@ -23,17 +23,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0px;
+    justify-content: center;
   }
   header .container {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .blog_posts {
-    padding: 0px;
-    justify-content: center;
-  }
+
   .footer-bottom-nav {
     display: block;
   }
@@ -54,13 +51,12 @@
   }
   .container-main-box p {
     margin-bottom: 10px;
+    font-size: 13px;
   }
   .container-main-box {
     padding-top: 5px;
   }
-  .container-main-box p {
-    font-size: 13px;
-  }
+
   header {
     padding-top: 10px;
   }
@@ -460,17 +456,10 @@
     min-width: 137px;
   }
   .container-main {
-    /*/display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;/*/
     padding: 58px 68px 50px;
   }
   header .container {
     padding: 0px 15px;
-  }
-  .blog_post {
-    width: fit-content;
   }
   .right-side-main {
     display: flex;
@@ -638,9 +627,6 @@
   }
   header .container {
     padding: 0px 10px;
-  }
-  .blog_post {
-    width: fit-content;
   }
 }
 
